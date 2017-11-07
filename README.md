@@ -1,23 +1,29 @@
 PicassoPalette
 =======
 
-[![Build Status](https://travis-ci.org/florent37/Wear-Emmet.svg)](https://travis-ci.org/florent37/PicassoPalette)
+<a href="https://play.google.com/store/apps/details?id=com.github.florent37.florent.champigny">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
+
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PicassoPalette%20-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1825)
 
 ![Alt sample](https://raw.githubusercontent.com/florent37/PicassoPalette/master/screenshot/nyancat_small_2.png)
 
-#Download
+# Download
+
+<a href='https://ko-fi.com/A160LCC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 In your module [![Download](https://api.bintray.com/packages/florent37/maven/PicassoPalette/images/download.svg)](https://bintray.com/florent37/maven/PicassoPalette/_latestVersion)
 ```groovy
-compile 'com.github.florent37:picassopalette:1.0.1@aar'
+compile 'com.github.florent37:picassopalette:2.0.0'
+compile 'com.squareup.picasso:picasso:2.5.2'
 ```
 
-#Sample
+# Sample
 
 ```java
-Picasso.with(this).load(url).into(imageView,
-         PicassoPalette.with(url, imageView)
+Picasso.with(this).load(url.toString()).into(imageView,
+         PicassoPalette.with(url.toString(), imageView)
                .use(PicassoPalette.Profile.MUTED_DARK)
                    .intoBackground(textView)
                    .intoTextColor(textView)
@@ -28,15 +34,15 @@ Picasso.with(this).load(url).into(imageView,
          );
 ```
 
-##Initialisation
+## Initialisation
 
 First, init PicassoPalette with an **Url** and an **ImageView**
 
 ```java
-PicassoPalette.with(url, imageView)
+PicassoPalette.with(url.toString(), imageView)
 ```
 
-##Palettes
+## Palettes
 
 You can successively use following palettes :
 
@@ -60,7 +66,7 @@ You can successively use following palettes :
     //next operations will use Profile.VIBRANT
 ```
 
-##Swatches
+## Swatches
 
 With the following Swatchs
 
@@ -68,7 +74,7 @@ With the following Swatchs
 - TITLE_TEXT_COLOR
 - BODY_TEXT_COLOR
 
-##Targets
+## Targets
 
 Into Backgrounds
 
@@ -84,7 +90,7 @@ And TextView Color
 .intoTextColor(textView,Swatch.TITLE_TEXT_COLOR)
 ```
 
-#CallBack
+# CallBack
 
 Or simply return into CallBack
 
@@ -99,20 +105,23 @@ Or simply return into CallBack
 ```
 
 
-#TODO
+# TODO
 
-#Community
+# Community
 
 Looking for contributors, feel free to fork !
 
-#Dependencies
+# Dependencies
 
 - Picasso from Square : [http://square.github.io/picasso/][picasso]
 
-#Credits
+# Credits
 
-Author: Florent Champigny
+Author: Florent Champigny www.florentchampigny.com/
 
+<a href="https://play.google.com/store/apps/details?id=com.github.florent37.florent.champigny">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
 <a href="https://plus.google.com/+florentchampigny">
   <img alt="Follow me on Google+"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/gplus.png" />
@@ -121,12 +130,12 @@ Author: Florent Champigny
   <img alt="Follow me on Twitter"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/twitter.png" />
 </a>
-<a href="https://www.linkedin.com/profile/view?id=297860624">
+<a href="https://www.linkedin.com/in/florentchampigny">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
 </a>
 
-#License
+# License
 
     Copyright 2015 florent37, Inc.
 
